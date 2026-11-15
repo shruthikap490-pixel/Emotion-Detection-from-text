@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emoji Gallery</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Emoji Gallery 🎭</h1>
+
+<div class="gallery">
+{% for emotion, emoji in emotions.items() %}
+    <div class="card">
+        <h2>{{ emotion }}</h2>
+        <div class="emoji">{{ emoji }}</div>
+    </div>
+{% endfor %}
+</div>
+
+</body>
+</html>

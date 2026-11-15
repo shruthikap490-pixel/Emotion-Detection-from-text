@@ -1,0 +1,131 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial;
+    background:linear-gradient(45deg,#141e30,#243b55,#ff00cc,#3333ff);
+    background-size:400% 400%;
+    animation:bg 10s infinite;
+    color:white;
+    text-align:center;
+}
+
+@keyframes bg{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.navbar{
+    background:black;
+    padding:20px;
+}
+.navbar a{
+    color:white;
+    margin:20px;
+    text-decoration:none;
+    font-size:20px;
+}
+
+.hero{
+    margin-top:150px;
+}
+
+.hero h1{
+    font-size:60px;
+    animation:glow 2s infinite;
+}
+
+@keyframes glow{
+    0%{text-shadow:0 0 10px cyan;}
+    50%{text-shadow:0 0 40px pink;}
+    100%{text-shadow:0 0 10px cyan;}
+}
+.btn,
+button{
+    padding:15px 30px;
+    border:none;
+    border-radius:30px;
+    background:#00ffcc;
+    font-size:20px;
+    cursor:pointer;
+    transition:0.5s;
+}
+
+.btn:hover,
+button:hover{
+    transform:scale(1.1);
+    background:yellow;
+}
+
+textarea,
+input{
+    width:60%;
+    padding:15px;
+    margin:15px;
+    border-radius:15px;
+    border:none;
+    font-size:18px;
+}
+
+.result-card,
+.card,
+.about-box,
+.contact-box{
+    width:70%;
+    margin:auto;
+    margin-top:40px;
+    padding:30px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.2);
+    backdrop-filter:blur(10px);
+    box-shadow:0px 0px 20px white;
+}
+
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    width:200px;
+    margin:20px;
+}
+.emoji{
+    font-size:80px;
+}
+
+.animation-area{
+    margin-top:100px;
+}
+
+.ball,
+.ball2,
+.ball3{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    display:inline-block;
+    margin:20px;
+    animation:bounce 2s infinite;
+}
+
+.ball{
+    background:red;
+}
+
+.ball2{
+    background:yellow;
+    animation-delay:0.5s;
+}
+
+.ball3{
+    background:cyan;
+    animation-delay:1s;
+}
+
+@keyframes bounce{
+    0%{transform:translateY(0px);}
+    50%{transform:translateY(-100px);}
+    100%{transform:translateY(0px);}
+}
